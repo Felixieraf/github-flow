@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice git workflow</title>
+        <style>
+                body {
+  margin: 0;
+}
+
+#wrap {
+  font-family: sans-serif;
+  font-size: 21px;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  color: #2154a2;
+  transition: transform .4s cubic-bezier(.25, .1, .25, 1);
+}
+
+#wrap{
+  transform: translate3d(-335px, 0, 0);
+}
+
+
+label {
+  height: 44px;
+  text-align: right;
+  display: block;
+  margin-right: -30px;
+}
+
+
+
+a,
+label {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.header {
+  background:#2154a2;
+  width: 360px;
+  padding: 0 20px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.nav {
+  padding: 25px;
+}
+
+.main {
+  padding: 25px;
+  flex: 1;
+  display:inline-block;
+}
+
+p {
+  max-width: 590px;
+  color:#306;
+}
+
+#menu{
+  display:none;
+}
+#menu:checked ~ #wrap{
+  transform: translate3d(0, 0, 0);
+}
+
+label>span{
+  display:none;
+}
+#menu:checked ~ #wrap label>span{
+  display:block;
+  font-size:48px;
+  line-height:48px;
+}
+
+#menu:checked ~ #wrap label>svg{
+  display:none;
+}
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" id="menu" name="menu">
+        <div id="wrap">
+          <header class="header">
+            <nav class="nav">
+              <label for="menu">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34px" height="27px" viewBox="0 0 34 27" enable-background="new 0 0 34 27" xml:space="preserve">
+        <rect fill="#FFFFFF" width="34" height="4"/>
+        <rect y="11" fill="#FFFFFF" width="34" height="4"/>
+        <rect y="23" fill="#FFFFFF" width="34" height="4"/>
+        </svg>
+                <span>×</span>
+              
+              </label>
+          
+              <h1><a href="#">typo~typo</a></h1>
+              <a href="#">Helvetica</a>
+              <a href="#">Times New Roman</a>
+              <a href="#">Garamond</a>
+              <a href="#">Didot</a>
+              <a href="#">Franklin Gothic</a>
+              <a href="#">à propos</a>
+            </nav>
+          </header>
+          <main class="main">
+            <h1>Helvetica</h1>
+            <p>Helvetica est une police de caractères linéale sans empattement (en anglais, sans serif) créée en 1957 par Max Miedinger qui l'a dessinée dans un objectif précis : atteindre l'harmonie optique la plus aboutie possible. Symbole de la typographie suisse,
+              cette police d'une grande lisibilité avec son tracé d'une grande neutralité lui permet de se prêter à tous les usages, si bien qu'elle demeure une des polices les plus utilisées dans le monde et jouit de la faveur des graphistes et typographes.</p>
+            <h1>Times New Roman</h1>
+            <p>Times New Roman est une police de caractère avec empattement connue et répandue, faisant partie de la famille des réales. Elle est apparue en 1931 dans le journal londonien The Times (police Times), pour lequel elle a été dessinée par Victor Lardent
+              (en) sous la direction de Stanley Morison (Monotype). Bien qu'elle ne soit plus utilisée par le journal, cette police est toujours très utilisée dans les livres.</p>
+        
+            <h1>Franklin Gothic</h1>
+        
+            <p>Franklin Gothic est une police d’écriture sans serif réaliste dessinée par Morris Fuller Benton en 1902 pour l’American Type Founders. Elle est complétée au fil des années en une famille de polices de caractères large et polyvalente.</p>
+        
+          </main>
+        </div>
+  
+</html>
